@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 
 :root{
     --main-bg-color:rgb(230,230,230);
@@ -148,12 +150,12 @@ footer a{
 }
 
 #copyright_footer{
-    color:var(--main-text-color);
+    color:var(white);
     text-align:center;
     padding-top:10px;
     padding-bottom:10px;
     margin-bottom:-20px;
-    background-color:rgb(192, 192, 192);
+    background-color:var(--main-text-color);
 }
 
 
@@ -175,19 +177,47 @@ footer a{
     align-items:center;
     height:100vh;
     margin-bottom:50px;
+
+}
+
+/*HOME PAGE*/
+
+
+#home_page_container{
+    background-color:black;
+}
+
+#home_page_container h1{
+    color:white !important;
+}
+
+#header_container{
+
+    height:600px
+}
+
+#home_content{
+    margin-top:20px;
 }
 
 
 
-.header h1{
+#header_container h1{
     font-family:'Gilda Display';
-    font-size:3rem;
+    font-size:15vw;
     text-align:center;
     color:var(--main-text-color);
+    margin-top:-10px;
+    letter-spacing:1rem;
+    margin-left:20px;
+    margin-top:5px;
+    
 }
 
-.header img{
+#header_container img{
     max-width:80%;
+    margin:auto;
+    display:block;
 }
 
 .p_content{
@@ -200,23 +230,34 @@ footer a{
     line-height:1.7rem;
     text-align:left;
     padding:10px 20px 10px 20px;
+    border-radius:15px;
+}
+
+@media screen and (max-width:1320px){
+    #home_content{
+        flex-direction:column;
+    }
 }
 
 /*DOCUMENTARY*/
 
 #documentary{
-    width:98vw;
+    width:75vw;
 }
 
-@media screen and (min-width:600px) and (max-width: 1299px){
+#documentary2{
+    width:75vw;
+}
+
+/*@media screen and (min-width:600px) and (max-width: 1299px){*/
     #documentary{
-        width:98vw;
+        width:75vw;
         height:75vh;
     }
     #documentary_link{
         display:none;
     }
-}
+//}
 
 #documentary_link{
     font-family:'Gilda Display',sans-serif;
@@ -263,6 +304,8 @@ footer a{
         #lullaby_content{
         height:80vh;
         overflow-y:scroll;
+        margin-left:auto;
+        margin-right:auto;
         }
         #lullaby_project_album_cover{
         width:40vw;
@@ -273,8 +316,8 @@ footer a{
 
 /*ROAD TO TEHRAN */
 
-#tehran_heading{
-    font-size:2rem;
+#tehran_heading h1{
+    font-size:1rem;
 }
 
 #tehran_subheading{
@@ -284,7 +327,7 @@ footer a{
 }
 
 #road_to_tehran_album_cover{
-
+    
 }
 
 @media screen and (min-width:1300px){
@@ -294,13 +337,16 @@ footer a{
         }
         #road_to_tehran_album_cover{
         width:40vw;
+        padding:30px;
+        max-width:600px;
         height:auto;
     }
 }
 
 @media screen and (max-width:1299px){
     #road_to_tehran_album_cover{
-        width:800px;
+        width:80vw;
+        max-width:600px;
     }
 }
 
@@ -404,30 +450,52 @@ footer a{
 
     /*DOCUMENTARY*/
 
+    #documentary_content{
+        margin-top:100px;
+        display:flex;
+        flex-direction:column;
+        padding-bottom:200px;
+    }
+
+    #documentary_header{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+
     #documentary{
-    width:75vw;
+    width:50vw;
     height:75vh;
+    }
+
+    #documentary2{
+        display:block;
+        margin:0 auto;
+        width:50vw;
+        height:75vh;
     }
 
     #documentary_link{
         display:none;
     }
+    
 }
 }
 
-#contact_image{
-    margin-top:-150px;
-    height:auto;
-    width:90vw;
-    max-height:400px;
-    max-width:600px;
-    border-radius:15px;
-}
+#baby_lap {
+            display:block;
+            width:80%;
+            max-width:600px;
+            height:auto;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:50px;
+            border-radius:50px;
+        }
 
 #contact_h1{
     margin-top:10px;
 }
-
 #email_content{
     margin-top:-250px;
     text-align:center;
@@ -489,4 +557,16 @@ a {
 
 #sanobelk{
     color:black;
+}
+
+@media screen and (min-width:860px){
+    #header_container h1{
+    font-size:96pt;
+    }
+}
+
+.firstLetter{
+    font-size:2rem;
+    font-family:'Great Vibes';
+    padding-right:5px;
 }
