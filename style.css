@@ -198,6 +198,8 @@ footer a{
 
 #home_content{
     margin-top:20px;
+    display:flex;
+    flex-direction:column;
 }
 
 
@@ -241,23 +243,34 @@ footer a{
 
 /*DOCUMENTARY*/
 
-#documentary{
-    width:75vw;
-}
+    #documentary_content{
+        margin-top:100px;
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
 
-#documentary2{
-    width:75vw;
-}
+    #documentary, #documentary2{
+        width:100% !important;
+        height:100% !important;
+        margin:auto;
+    }
 
-/*@media screen and (min-width:600px) and (max-width: 1299px){*/
-    #documentary{
-        width:75vw;
-        height:75vh;
+
+    .video_container{
+        
+        width:90%;
+        height:90%;
+        max-width:1200px;
+        padding:30px;
     }
     #documentary_link{
-        display:none;
+        margin:50px;
+        text-align:center;
     }
-//}
+
+
+
 
 #documentary_link{
     font-family:'Gilda Display',sans-serif;
@@ -301,15 +314,24 @@ footer a{
 }
 
 @media screen and (min-width:1300px){
+
         #lullaby_content{
         height:80vh;
         overflow-y:scroll;
-        margin-left:auto;
-        margin-right:auto;
         }
         #lullaby_project_album_cover{
         width:40vw;
+        padding:30px;
+        max-width:600px;
         height:auto;
+    }
+}
+
+@media screen and (max-width:1299px){
+    #lullaby_project_album_cover{
+        width:60vw !important;
+        max-width:600px !important;
+        padding:100px;
     }
 }
 
@@ -324,10 +346,6 @@ footer a{
     margin-top:-20px;
     text-align:center;
     font-family:'Gilda Display';
-}
-
-#road_to_tehran_album_cover{
-    
 }
 
 @media screen and (min-width:1300px){
@@ -345,8 +363,9 @@ footer a{
 
 @media screen and (max-width:1299px){
     #road_to_tehran_album_cover{
-        width:80vw;
-        max-width:600px;
+        width:60vw !important;
+        max-width:600px !important;
+        padding:100px;
     }
 }
 
@@ -447,39 +466,7 @@ footer a{
         font-family:'Gilda Display', cursive;
         font-weight:bold;
     }
-
-    /*DOCUMENTARY*/
-
-    #documentary_content{
-        margin-top:100px;
-        display:flex;
-        flex-direction:column;
-        padding-bottom:200px;
-    }
-
-    #documentary_header{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-    }
-
-    #documentary{
-    width:50vw;
-    height:75vh;
-    }
-
-    #documentary2{
-        display:block;
-        margin:0 auto;
-        width:50vw;
-        height:75vh;
-    }
-
-    #documentary_link{
-        display:none;
-    }
-    
-}
+   
 }
 
 #baby_lap {
